@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleGuessingGame", "Simpl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleArithmeticCalculator", "SimpleArithmeticCalculator\SimpleArithmeticCalculator.vcxproj", "{4897BB7E-C4CA-4D0D-B535-7E70744CCBDB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter4", "Chapter4\Chapter4.vcxproj", "{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextAdventureGame", "TextAdventureGame\TextAdventureGame.vcxproj", "{239B17A6-6F2D-49BE-95B7-90B408A78904}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +31,14 @@ Global
 		{4897BB7E-C4CA-4D0D-B535-7E70744CCBDB}.Debug|Win32.Build.0 = Debug|Win32
 		{4897BB7E-C4CA-4D0D-B535-7E70744CCBDB}.Release|Win32.ActiveCfg = Release|Win32
 		{4897BB7E-C4CA-4D0D-B535-7E70744CCBDB}.Release|Win32.Build.0 = Release|Win32
+		{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}.Debug|Win32.Build.0 = Debug|Win32
+		{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}.Release|Win32.ActiveCfg = Release|Win32
+		{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}.Release|Win32.Build.0 = Release|Win32
+		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Debug|Win32.ActiveCfg = Debug|Win32
+		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Debug|Win32.Build.0 = Debug|Win32
+		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Release|Win32.ActiveCfg = Release|Win32
+		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
