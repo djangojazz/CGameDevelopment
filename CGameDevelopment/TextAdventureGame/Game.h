@@ -1,17 +1,21 @@
-#pragma once
-
 #include "Player.h"
 #include "PlayerOptions.h"
+#include <iostream>
 
-namespace GameLoop
+using namespace std;
+
+class Game
 {
-	void WelcomePlayer(Player& player);
 
+private:
+	Player m_player;
+
+	void WelcomePlayer();
 	void GivePlayerOptions();
-
 	void GetPlayerInput(std::string& playerInput);
-
 	PlayerOptions EvaluateInput(std::string& playerInput);
 
+public:
 	bool RunGame();
-}
+};
+	

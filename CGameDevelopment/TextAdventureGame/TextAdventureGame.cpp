@@ -3,19 +3,13 @@
 
 #include "stdafx.h"
 #include "Player.h"
-#include "GameLoop.h"
+#include "Game.h"
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Player player;
-	GameLoop::WelcomePlayer(player);
-
-	bool isPlaying = true;
-	while (isPlaying)
-	{
-		isPlaying = GameLoop::RunGame();
-	}
+	Game game;
+	game.RunGame();
 
 	return 0;
 }
