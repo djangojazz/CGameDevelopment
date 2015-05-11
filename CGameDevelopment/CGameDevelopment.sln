@@ -11,8 +11,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleArithmeticCalculator"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter4", "Chapter4\Chapter4.vcxproj", "{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextAdventureGame", "TextAdventureGame\TextAdventureGame.vcxproj", "{239B17A6-6F2D-49BE-95B7-90B408A78904}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter5", "Chapter5\Chapter5.vcxproj", "{9B2BB424-33B4-436D-A4AB-10D2A39BF585}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter6", "Chapter6\Chapter6.vcxproj", "{A17FB31F-E603-4A05-B4B5-3902B82E4A6B}"
@@ -41,10 +39,6 @@ Global
 		{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}.Debug|Win32.Build.0 = Debug|Win32
 		{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}.Release|Win32.ActiveCfg = Release|Win32
 		{73F94801-7BE2-4F3C-8A43-397F1F9F8CA8}.Release|Win32.Build.0 = Release|Win32
-		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Debug|Win32.ActiveCfg = Debug|Win32
-		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Debug|Win32.Build.0 = Debug|Win32
-		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Release|Win32.ActiveCfg = Release|Win32
-		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Release|Win32.Build.0 = Release|Win32
 		{9B2BB424-33B4-436D-A4AB-10D2A39BF585}.Debug|Win32.ActiveCfg = Debug|Win32
 		{9B2BB424-33B4-436D-A4AB-10D2A39BF585}.Debug|Win32.Build.0 = Debug|Win32
 		{9B2BB424-33B4-436D-A4AB-10D2A39BF585}.Release|Win32.ActiveCfg = Release|Win32
