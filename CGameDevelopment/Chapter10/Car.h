@@ -5,5 +5,6 @@ class Car : public Vehicle
 {
 public:
 	Car();
+	~Car();
 };
 

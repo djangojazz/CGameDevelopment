@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter9", "Chapter9\Chapte
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter10", "Chapter10\Chapter10.vcxproj", "{7BAABCD0-8F3A-40B3-B971-74C50C2CDF52}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextAdventureGame", "TextAdventureGame\TextAdventureGame.vcxproj", "{239B17A6-6F2D-49BE-95B7-90B408A78904}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -63,6 +65,10 @@ Global
 		{7BAABCD0-8F3A-40B3-B971-74C50C2CDF52}.Debug|Win32.Build.0 = Debug|Win32
 		{7BAABCD0-8F3A-40B3-B971-74C50C2CDF52}.Release|Win32.ActiveCfg = Release|Win32
 		{7BAABCD0-8F3A-40B3-B971-74C50C2CDF52}.Release|Win32.Build.0 = Release|Win32
+		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Debug|Win32.ActiveCfg = Debug|Win32
+		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Debug|Win32.Build.0 = Debug|Win32
+		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Release|Win32.ActiveCfg = Release|Win32
+		{239B17A6-6F2D-49BE-95B7-90B408A78904}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

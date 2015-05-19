@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include "Player.h"
-#include "Game.h"
+#include "GameLoop.h"
 
 
 int _tmain(int argc, _TCHAR* argv[])
