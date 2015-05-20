@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{239B17A6-6F2D-49BE-95B7-90B408A78904}</ProjectGuid>
+    <ProjectGuid>{C310B894-8642-4708-9D36-60C1E5191C86}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>TextAdventureGame</RootNamespace>
+    <RootNamespace>Chapter11</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -79,31 +79,19 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="GameLoop.h" />
-    <ClInclude Include="MoveOption.h" />
-    <ClInclude Include="Option.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerOptions.h" />
-    <ClInclude Include="QuitOption.h" />
-    <ClInclude Include="Room.h" />
+    <ClInclude Include="Car.h" />
+    <ClInclude Include="Motorcycle.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameLoop.cpp">
+    <ClCompile Include="Car.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="MoveOption.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="QuitOption.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Room.cpp">
+    <ClCompile Include="Chapter11.cpp" />
+    <ClCompile Include="Motorcycle.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
     </ClCompile>
@@ -111,7 +99,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="TextAdventureGame.cpp" />
+    <ClCompile Include="Vehicle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
