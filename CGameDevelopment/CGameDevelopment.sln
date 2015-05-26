@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextAdventureGame", "TextAd
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter11", "Chapter11\Chapter11.vcxproj", "{C310B894-8642-4708-9D36-60C1E5191C86}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter13", "Chapter13\Chapter13.vcxproj", "{BFA65CCD-0727-47EE-B634-1498A3D14411}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -75,6 +77,10 @@ Global
 		{C310B894-8642-4708-9D36-60C1E5191C86}.Debug|Win32.Build.0 = Debug|Win32
 		{C310B894-8642-4708-9D36-60C1E5191C86}.Release|Win32.ActiveCfg = Release|Win32
 		{C310B894-8642-4708-9D36-60C1E5191C86}.Release|Win32.Build.0 = Release|Win32
+		{BFA65CCD-0727-47EE-B634-1498A3D14411}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFA65CCD-0727-47EE-B634-1498A3D14411}.Debug|Win32.Build.0 = Debug|Win32
+		{BFA65CCD-0727-47EE-B634-1498A3D14411}.Release|Win32.ActiveCfg = Release|Win32
+		{BFA65CCD-0727-47EE-B634-1498A3D14411}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
