@@ -10,7 +10,6 @@ class Option
 protected:
 	PlayerOptions	m_chosenOption;
 	std::string		m_outputText;
-	std::string		m_optionText;
 
 public:
 	Option(PlayerOptions chosenOption, const std::string& outputText)
@@ -18,11 +17,6 @@ public:
 		, m_outputText(outputText)
 	{
 
-	}
-
-	void Option::SetOptionText(const std::string& optionText)
-	{
-		m_optionText = optionText;
 	}
 
 	const std::string& GetOutputText() const
@@ -35,6 +29,5 @@ public:
 		return m_chosenOption;
 	}
 
-	virtual bool Evaluate(const std::string& optionText, Player& player) = 0;
+	virtual void Evaluate(Player& player) = 0;
 };
-

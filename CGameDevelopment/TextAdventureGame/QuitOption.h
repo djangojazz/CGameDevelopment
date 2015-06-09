@@ -19,5 +19,5 @@ public:
 	}
 
 	bool ShouldQuit() const { return m_shouldQuit; }
-	virtual bool Evaluate(const std::string& optionText, Player& player);
+	virtual void Evaluate(Player& player);
 };

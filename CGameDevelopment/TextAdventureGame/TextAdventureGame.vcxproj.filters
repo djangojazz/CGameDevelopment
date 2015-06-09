@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Options">
+      <UniqueIdentifier>{be83d7dd-682d-40ca-81b2-f41244908082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Options">
+      <UniqueIdentifier>{f8b98eaf-7ec6-490e-8930-2e73a3eea3db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -27,9 +33,6 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerOptions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -39,14 +42,35 @@
     <ClInclude Include="GameLoop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Option.h">
+    <ClInclude Include="Chest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <Filter>Header Files\Options</Filter>
+    </ClInclude>
     <ClInclude Include="MoveOption.h">
+      <Filter>Header Files\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerOptions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QuitOption.h">
+      <Filter>Header Files\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenChestOption.h">
+      <Filter>Header Files\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackEnemyOption.h">
+      <Filter>Header Files\Options</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -62,11 +86,20 @@
     <ClCompile Include="GameLoop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MoveOption.cpp">
+    <ClCompile Include="Chest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MoveOption.cpp">
+      <Filter>Source Files\Options</Filter>
+    </ClCompile>
     <ClCompile Include="QuitOption.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Options</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenChestOption.cpp">
+      <Filter>Source Files\Options</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackEnemyOption.cpp">
+      <Filter>Source Files\Options</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,10 @@
 #pragma once
 
 #include <string>
+#include <vector>
 #include "Entity.h"
+#include "Item.h"
+#include "Sword.h"
 
 class Room;
 
@@ -9,7 +12,10 @@ class Player
 	: public Entity
 {
 private:
-	const Room* m_pCurrentRoom;
+	using Items = std::vector<Item*>;
+	Items m_items;
+
+	Room* m_pCurrentRoom;
 	std::string m_name;
 
 public:
@@ -63,13 +69,35 @@ public:
 		return m_name;
 	}
 
-	void SetCurrentRoom(const Room* pCurrentRoom)
+	void SetCurrentRoom(Room* pCurrentRoom)
 	{
 		m_pCurrentRoom = pCurrentRoom;
 	}
 
-	const Room* GetCurrentRoom() const
+	Room* GetCurrentRoom() const
 	{
 		return m_pCurrentRoom;
+	}
+
+	void AddItem(const Item* item)
+	{
+		m_items.push_back(const_cast<Item*>(item));
+	}
+
+	bool HasWeapon()
+	{
+		bool hasWeapon = false;
+
+		for (const Item* item : m_items)
+		{
+			const Sword* sword = dynamic_cast<const Sword*>(item);
+			if (sword != nullptr)
+			{
+				hasWeapon = true;
+				break;
+			}
+		}
+
+		return hasWeapon;
 	}
 };

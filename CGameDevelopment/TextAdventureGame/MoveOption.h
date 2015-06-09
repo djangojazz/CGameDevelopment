@@ -17,6 +17,6 @@ public:
 	{
 	}
 
-	virtual bool Evaluate(const std::string& optionText, Player& player);
+	virtual void Evaluate(Player& player);
 };
 
