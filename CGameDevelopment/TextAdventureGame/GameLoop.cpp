@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include <cassert>
+#include "EventManager.h"
 
 using namespace std;
 
@@ -102,6 +103,8 @@ PlayerOptions Game::EvaluateInput(stringstream& playerInputStream)
 
 void Game::RunGame()
 {
+	new EventManager();
+
 	InitializeRooms();
 
 	WelcomePlayer();
@@ -128,4 +131,6 @@ void Game::RunGame()
 		std::string input;
 		cin >> input;
 	}
+
+	delete EventManager::GetSingletonPtr();
 }
