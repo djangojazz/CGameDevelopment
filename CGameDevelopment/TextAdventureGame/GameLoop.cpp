@@ -3,8 +3,21 @@
 #include <sstream>
 #include <cassert>
 #include "EventManager.h"
+#include "SDBMHash.h"
 
 using namespace std;
+
+namespace
+{
+	constexpr char* const QuitEventString = "QuitEvent";
+	constexpr int QuitEventStringLength =
+#ifndef constexpr
+		constexpr_strlen(QuitEventString);
+#else
+		9;
+#endif
+	constexpr int QuitEvent = SDBMCalculator<QuitEventStringLength>::CalculateValue(QuitEventString);
+}
 
 Game::Game()
 	: m_attackDragonOption(&m_dragon, "Attack Dragon")
@@ -81,7 +94,7 @@ void Game::GetPlayerInput(stringstream& playerInputStream) const
 	playerInputStream << input;
 }
 
-PlayerOptions Game::EvaluateInput(stringstream& playerInputStream)
+void Game::EvaluateInput(stringstream& playerInputStream)
 {
 	PlayerOptions chosenOption = PlayerOptions::None;
 	unsigned int playerInputChoice{ 0 };
@@ -91,35 +104,41 @@ PlayerOptions Game::EvaluateInput(stringstream& playerInputStream)
 	{
 		Option* option = m_player.GetCurrentRoom()->EvaluateInput(playerInputChoice);
 		option->Evaluate(m_player);
-		chosenOption = option->GetChosenOption();
 	}
 	catch (const std::out_of_range&)
 	{
 		cout << "I do not recognize that option, try again!" << endl << endl;
 	}
+}
 
-	return chosenOption;
+void Game::HandleEvent(const Event* pEvent)
+{
+	if (pEvent->GetID() == QuitEvent)
+	{
+		m_playerQuit = true;
+	}
 }
 
 void Game::RunGame()
 {
 	new EventManager();
 
+	RegisterEvent(QuitEvent);
+	AttachEvent(QuitEvent, this);
+
 	InitializeRooms();
 
 	WelcomePlayer();
 
 	bool playerWon = false;
-	bool playerQuit = false;
-	while (playerQuit == false && playerWon == false)
+	while (m_playerQuit == false && playerWon == false)
 	{
 		GivePlayerOptions();
 
 		stringstream playerInputStream;
 		GetPlayerInput(playerInputStream);
 
-		PlayerOptions selectedOption = EvaluateInput(playerInputStream);
-		playerQuit = selectedOption == PlayerOptions::Quit;
+		EvaluateInput(playerInputStream);
 
 		playerWon = m_dragon.IsAlive() == false && m_orc.IsAlive() == false;
 	}
@@ -132,5 +151,6 @@ void Game::RunGame()
 		cin >> input;
 	}
 
+	DetachEvent(QuitEvent, this);
 	delete EventManager::GetSingletonPtr();
 }

@@ -95,6 +95,7 @@
     <ClInclude Include="PlayerOptions.h" />
     <ClInclude Include="QuitOption.h" />
     <ClInclude Include="Room.h" />
+    <ClInclude Include="SDBMHash.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Sword.h" />
@@ -109,7 +110,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="Event.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="EventManager.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>

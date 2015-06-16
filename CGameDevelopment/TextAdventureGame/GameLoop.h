@@ -3,6 +3,7 @@
 #include "AttackEnemyOption.h"
 #include "Chest.h"
 #include "Enemy.h"
+#include "EventHandler.h"
 #include "MoveOption.h"
 #include "OpenChestOption.h"
 #include "Player.h"
@@ -14,6 +15,7 @@
 #include <map>
 
 class Game
+	: public EventHandler
 {
 private:
 	static const unsigned int m_numberOfRooms = 4;
@@ -37,13 +39,17 @@ private:
 	Enemy			m_dragon;
 	Enemy			m_orc;
 
+	bool m_playerQuit{ false };
+
 	void InitializeRooms();
 	void WelcomePlayer();
 	void GivePlayerOptions() const;
 	void GetPlayerInput(std::stringstream& playerInput) const;
-	PlayerOptions EvaluateInput(std::stringstream& playerInput);
+	void EvaluateInput(std::stringstream& playerInput);
 public:
 	Game();
 
 	void RunGame();
+
+	virtual void HandleEvent(const Event* pEvent);
 };
