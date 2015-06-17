@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{239B17A6-6F2D-49BE-95B7-90B408A78904}</ProjectGuid>
+    <ProjectGuid>{BCBE083E-A918-4125-9C16-A94D93FC83A1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>TextAdventureGame</RootNamespace>
+    <RootNamespace>Chapter22</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -62,7 +62,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -80,70 +81,12 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AttackEnemyOption.h" />
-    <ClInclude Include="Chest.h" />
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="Event.h" />
-    <ClInclude Include="EventHandler.h" />
-    <ClInclude Include="EventManager.h" />
-    <ClInclude Include="GameLoop.h" />
-    <ClInclude Include="Item.h" />
-    <ClInclude Include="MoveOption.h" />
-    <ClInclude Include="OpenChestOption.h" />
-    <ClInclude Include="Option.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerOptions.h" />
-    <ClInclude Include="QuitOption.h" />
-    <ClInclude Include="Room.h" />
-    <ClInclude Include="SDBMHash.h" />
-    <ClInclude Include="Singleton.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Sword.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AttackEnemyOption.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Chest.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Event.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="EventManager.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="GameLoop.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="MoveOption.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="OpenChestOption.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="QuitOption.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Room.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="TextAdventureGame.cpp" />
+    <ClCompile Include="Chapter22.cpp" />
+    <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
