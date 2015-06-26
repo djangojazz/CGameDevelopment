@@ -102,9 +102,7 @@ void PrintAllocations()
 void RunMemoryAllocations()
 {
 	memset(pMemoryHeap, 0, SIZE_OF_MEMORY_HEADER);
-
 	PrintAllocations();
-
 	Simple* pSimple1 = new Simple();
 
 	PrintAllocations();
