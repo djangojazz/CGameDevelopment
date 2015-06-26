@@ -106,11 +106,9 @@ void RunMemoryAllocations()
 	Simple* pSimple1 = new Simple();
 
 	PrintAllocations();
-
 	Simple* pSimple2 = new Simple();
 
 	PrintAllocations();
-
 	Simple* pSimple3 = new Simple();
 
 	PrintAllocations();
