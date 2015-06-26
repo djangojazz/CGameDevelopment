@@ -38,6 +38,11 @@ struct MemoryAllocationHeader
 	void* pStart{ nullptr };
 	void* pNextFree{ nullptr };
 	size_t size{ 0 };
+
+
+
+
+
 };
 
 namespace
