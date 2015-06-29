@@ -38,11 +38,6 @@ struct MemoryAllocationHeader
 	void* pStart{ nullptr };
 	void* pNextFree{ nullptr };
 	size_t size{ 0 };
-
-
-
-
-
 };
 
 namespace
@@ -162,6 +157,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << pIntArray2.get() << endl;*/
 
 	RunMemoryAllocations();
+
+	cout << "Test Out" << endl;
 
 	return 0;
 }
